@@ -15,6 +15,8 @@
 		D7C22FF71D542A5A0079DF4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7C22FF51D542A5A0079DF4C /* LaunchScreen.storyboard */; };
 		D7C230021D542A5A0079DF4C /* YYFUIAlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C230011D542A5A0079DF4C /* YYFUIAlertTests.m */; };
 		D7C2300D1D542A5A0079DF4C /* YYFUIAlertUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C2300C1D542A5A0079DF4C /* YYFUIAlertUITests.m */; };
+		D7C2301D1D542C8D0079DF4C /* AlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C2301C1D542C8D0079DF4C /* AlertManager.m */; };
+		D7C2301F1D5430CF0079DF4C /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D7C2301E1D5430CF0079DF4C /* 1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		D7C230081D542A5A0079DF4C /* YYFUIAlertUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYFUIAlertUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7C2300C1D542A5A0079DF4C /* YYFUIAlertUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYFUIAlertUITests.m; sourceTree = "<group>"; };
 		D7C2300E1D542A5A0079DF4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7C2301B1D542C8D0079DF4C /* AlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertManager.h; sourceTree = "<group>"; };
+		D7C2301C1D542C8D0079DF4C /* AlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertManager.m; sourceTree = "<group>"; };
+		D7C2301E1D5430CF0079DF4C /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +106,12 @@
 		D7C22FE61D542A5A0079DF4C /* YYFUIAlert */ = {
 			isa = PBXGroup;
 			children = (
+				D7C2301A1D542C010079DF4C /* UIAertmanager */,
 				D7C22FEA1D542A5A0079DF4C /* AppDelegate.h */,
 				D7C22FEB1D542A5A0079DF4C /* AppDelegate.m */,
 				D7C22FED1D542A5A0079DF4C /* ViewController.h */,
 				D7C22FEE1D542A5A0079DF4C /* ViewController.m */,
+				D7C2301E1D5430CF0079DF4C /* 1.png */,
 				D7C22FF01D542A5A0079DF4C /* Main.storyboard */,
 				D7C22FF31D542A5A0079DF4C /* Assets.xcassets */,
 				D7C22FF51D542A5A0079DF4C /* LaunchScreen.storyboard */,
@@ -138,6 +145,15 @@
 				D7C2300E1D542A5A0079DF4C /* Info.plist */,
 			);
 			path = YYFUIAlertUITests;
+			sourceTree = "<group>";
+		};
+		D7C2301A1D542C010079DF4C /* UIAertmanager */ = {
+			isa = PBXGroup;
+			children = (
+				D7C2301B1D542C8D0079DF4C /* AlertManager.h */,
+				D7C2301C1D542C8D0079DF4C /* AlertManager.m */,
+			);
+			name = UIAertmanager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7C22FF71D542A5A0079DF4C /* LaunchScreen.storyboard in Resources */,
+				D7C2301F1D5430CF0079DF4C /* 1.png in Resources */,
 				D7C22FF41D542A5A0079DF4C /* Assets.xcassets in Resources */,
 				D7C22FF21D542A5A0079DF4C /* Main.storyboard in Resources */,
 			);
@@ -270,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7C2301D1D542C8D0079DF4C /* AlertManager.m in Sources */,
 				D7C22FEF1D542A5A0079DF4C /* ViewController.m in Sources */,
 				D7C22FEC1D542A5A0079DF4C /* AppDelegate.m in Sources */,
 				D7C22FE91D542A5A0079DF4C /* main.m in Sources */,
@@ -500,6 +518,7 @@
 				D7C230131D542A5A0079DF4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7C230141D542A5A0079DF4C /* Build configuration list for PBXNativeTarget "YYFUIAlertTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +527,7 @@
 				D7C230161D542A5A0079DF4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D7C230171D542A5A0079DF4C /* Build configuration list for PBXNativeTarget "YYFUIAlertUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +536,7 @@
 				D7C230191D542A5A0079DF4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
